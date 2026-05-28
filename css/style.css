@@ -237,18 +237,6 @@ body {
   font-weight: bold;
 }
 
-.tab-content {
-  display: none;
-
-  padding: 20px;
-
-  border: 1px solid #ddd;
-}
-
-.tab-content.active {
-  display: block;
-}
-
 /* TABLET */
 
 @media (max-width: 992px) {
@@ -290,9 +278,5 @@ body {
 
   .product-card {
     height: 320px;
-  }
-
-  .tabs {
-    flex-direction: column;
   }
 }
