@@ -1,340 +1,298 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family:Arial, sans-serif;
-    background:white;
+body {
+  font-family: Arial, sans-serif;
+  background: white;
 }
 
-
-
-.main-container{
-    width:100%;
+.main-container {
+  width: 100%;
 }
 
-
-
-.hero-section{
-    width:100%;
+.hero-section {
+  width: 100%;
 }
 
-
-
-.slider{
-    position:relative;
+.slider {
+  position: relative;
 }
 
-.slide{
-    display:none;
+.slide {
+  display: none;
 }
 
-.slide.active{
-    display:block;
+.slide.active {
+  display: block;
 }
 
-
-
-.hero-image{
-    width:100%;
-    height:650px;
-    background:#46a6e9;
+.hero-image {
+  width: 100%;
+  height: 650px;
+  background: #46a6e9;
 }
 
-.second{
-    background:#4db8ff;
+.second {
+  background: #4db8ff;
 }
 
-.third{
-    background:#5ac8fa;
+.third {
+  background: #5ac8fa;
 }
-
-/* ARROWS */
 
 .prev,
-.next{
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 
-    background:white;
-    border:none;
+  background: white;
+  border: none;
 
-    width:45px;
-    height:45px;
+  width: 45px;
+  height: 45px;
 
-    cursor:pointer;
+  cursor: pointer;
 
-    font-size:20px;
+  font-size: 20px;
 }
 
-.prev{
-    left:20px;
+.prev {
+  left: 20px;
 }
 
-.next{
-    right:20px;
+.next {
+  right: 20px;
 }
 
+.hero-content {
+  background: #0f2d47;
 
+  color: white;
 
-.hero-content{
-    background:#0f2d47;
+  padding: 40px 24px;
 
-    color:white;
-
-    padding:40px 24px;
-
-    position:relative;
+  position: relative;
 }
 
+.hero-content small {
+  font-size: 14px;
 
+  font-weight: 600;
 
-.hero-content small{
-    font-size:14px;
+  display: block;
 
-    font-weight:600;
-
-    display:block;
-
-    margin-bottom:18px;
+  margin-bottom: 18px;
 }
 
+.hero-content h1 {
+  font-size: 64px;
 
+  font-weight: 300;
 
-.hero-content h1{
-    font-size:64px;
+  line-height: 1.1;
 
-    font-weight:300;
-
-    line-height:1.1;
-
-    margin-bottom:22px;
+  margin-bottom: 22px;
 }
 
+.hero-content p {
+  max-width: 720px;
 
+  font-size: 18px;
 
-.hero-content p{
-    max-width:720px;
+  line-height: 1.5;
 
-    font-size:18px;
-
-    line-height:1.5;
-
-    margin-bottom:28px;
+  margin-bottom: 28px;
 }
 
-
-
-.buttons{
-    display:flex;
-    flex-direction:row;
-    flex-wrap:wrap;
-    gap:16px;
+.buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
+.buttons button {
+  width: 160px;
 
+  height: 56px;
 
-.buttons button{
-    width:160px;
+  font-size: 16px;
 
-    height:56px;
-
-    font-size:16px;
-
-    cursor:pointer;
+  cursor: pointer;
 }
 
+.btn-white {
+  background: white;
 
+  color: black;
 
-.btn-white{
-    background:white;
-
-    color:black;
-
-    border:1px solid white;
+  border: 1px solid white;
 }
 
+.btn-dark {
+  background: transparent;
 
-.btn-dark{
-    background:transparent;
+  color: white;
 
-    color:white;
-
-    border:1px solid white;
+  border: 1px solid white;
 }
 
+.dots {
+  position: absolute;
 
+  left: 50%;
 
-.dots{
-    position:absolute;
+  bottom: 24px;
 
-    right:30px;
+  transform: translateX(-50%);
 
-    bottom:24px;
+  display: flex;
 
-    display:flex;
-
-    gap:10px;
+  gap: 10px;
 }
 
-.dot{
-    width:10px;
+.dot {
+  width: 10px;
 
-    height:10px;
+  height: 10px;
 
-    border-radius:50%;
+  border-radius: 50%;
 
-    background:#d9d9d9;
+  background: #d9d9d9;
 
-    cursor:pointer;
+  cursor: pointer;
 }
 
-.dot.active{
-    background:white;
+.dot.active {
+  background: white;
 }
 
+.heading-section {
+  text-align: center;
 
-
-.heading-section{
-    text-align:center;
-
-    padding:60px 20px;
+  padding: 60px 20px;
 }
 
-.heading-section h2{
-    font-size:56px;
+.heading-section h2 {
+  font-size: 56px;
 }
 
+.products-section {
+  display: grid;
 
+  grid-template-columns: repeat(4, 1fr);
 
-.products-section{
-    display:grid;
+  gap: 8px;
 
-    grid-template-columns:repeat(4,1fr);
-
-    gap:8px;
-
-    padding:18px;
+  padding: 18px;
 }
 
+.product-card {
+  width: 100%;
+  height: 710px;
 
+  background: #63b357;
 
-.product-card{
-     width:100%;
-    height:710px;
-
-    background:#63b357;
-
-    position:relative;
-    overflow:hidden;
+  position: relative;
+  overflow: hidden;
 }
 
+.product-info {
+  position: absolute;
 
+  bottom: 20px;
 
-.product-info{
-    position:absolute;
+  left: 15px;
 
-    bottom:20px;
+  right: 15px;
 
-    left:15px;
+  display: flex;
 
-    right:15px;
+  justify-content: space-between;
 
-    display:flex;
+  align-items: flex-end;
 
-    justify-content:space-between;
-
-    align-items:flex-end;
-
-    color:white;
+  color: white;
 }
 
+.left-content small {
+  display: block;
 
+  font-size: 11px;
 
-.left-content small{
-    display:block;
-
-    font-size:11px;
-
-    margin-bottom:5px;
+  margin-bottom: 5px;
 }
 
-.left-content h4{
-    font-size:16px;
+.left-content h4 {
+  font-size: 16px;
 }
 
+.price {
+  font-size: 15px;
 
-
-.price{
-    font-size:15px;
-
-    font-weight:bold;
+  font-weight: bold;
 }
 
+.tab-content {
+  display: none;
 
-.tab-content{
-    display:none;
+  padding: 20px;
 
-    padding:20px;
-
-    border:1px solid #ddd;
+  border: 1px solid #ddd;
 }
 
-.tab-content.active{
-    display:block;
+.tab-content.active {
+  display: block;
 }
 
 /* TABLET */
 
-@media(max-width:992px){
+@media (max-width: 992px) {
+  .products-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .products-section{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .hero-content h1{
-        font-size:48px;
-    }
-
+  .hero-content h1 {
+    font-size: 48px;
+  }
 }
 
 /* MOBILE */
 
-@media(max-width:600px){
+@media (max-width: 600px) {
+  .hero-image {
+    height: 300px;
+  }
 
-    .hero-image{
-        height:300px;
-    }
+  .hero-content {
+    padding: 20px;
+  }
 
-    .hero-content{
-        padding:20px;
-    }
+  .hero-content h1 {
+    font-size: 34px;
+  }
 
-    .hero-content h1{
-        font-size:34px;
-    }
+  .hero-content p {
+    font-size: 14px;
+  }
 
-    .hero-content p{
-        font-size:14px;
-    }
+  .buttons {
+    flex-direction: column;
+  }
 
-    .buttons{
-        flex-direction:column;
-    }
+  .products-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-    .products-section{
-        grid-template-columns:repeat(2,1fr);
-    }
+  .product-card {
+    height: 320px;
+  }
 
-    .product-card{
-        height:320px;
-    }
-
-    .tabs{
-        flex-direction:column;
-    }
-
+  .tabs {
+    flex-direction: column;
+  }
 }
