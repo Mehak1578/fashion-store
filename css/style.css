@@ -9,19 +9,19 @@ body{
     background:white;
 }
 
-/* MAIN */
+
 
 .main-container{
     width:100%;
 }
 
-/* HERO SECTION */
+
 
 .hero-section{
     width:100%;
 }
 
-/* SLIDER */
+
 
 .slider{
     position:relative;
@@ -35,7 +35,7 @@ body{
     display:block;
 }
 
-/* HERO IMAGE */
+
 
 .hero-image{
     width:100%;

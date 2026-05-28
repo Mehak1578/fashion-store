@@ -1,4 +1,3 @@
-// SLIDER
 
 const slides = document.querySelectorAll(".slide");
 
@@ -10,7 +9,7 @@ const prev = document.querySelector(".prev");
 
 let currentSlide = 0;
 
-// SHOW SLIDE
+
 
 function showSlide(index){
 
@@ -27,7 +26,7 @@ function showSlide(index){
     dots[index].classList.add("active");
 }
 
-// NEXT BUTTON
+
 
 next.addEventListener("click", ()=>{
 
@@ -41,7 +40,7 @@ next.addEventListener("click", ()=>{
 
 });
 
-// PREVIOUS BUTTON
+
 
 prev.addEventListener("click", ()=>{
 
@@ -55,7 +54,7 @@ prev.addEventListener("click", ()=>{
 
 });
 
-// DOT CLICK
+
 
 dots.forEach((dot,index)=>{
 
@@ -69,7 +68,7 @@ dots.forEach((dot,index)=>{
 
 });
 
-// AUTOPLAY
+
 
 setInterval(()=>{
 
@@ -83,30 +82,6 @@ setInterval(()=>{
 
 },3000);
 
-// TABS
 
-const tabButtons = document.querySelectorAll(".tab-btn");
+    
 
-const tabContents = document.querySelectorAll(".tab-content");
-
-tabButtons.forEach((button)=>{
-
-    button.addEventListener("click", ()=>{
-
-        tabButtons.forEach((btn)=>{
-            btn.classList.remove("active");
-        });
-
-        tabContents.forEach((content)=>{
-            content.classList.remove("active");
-        });
-
-        button.classList.add("active");
-
-        document
-        .getElementById(`tab${button.dataset.tab}`)
-        .classList.add("active");
-
-    });
-
-});
